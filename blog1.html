@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html lang="zxx">
 
 <head>
    <!-- Required meta tags -->
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-   <title>Professional Videography for Brands | The PhD Ads</title>
+   <title>Professional Photography & Videography for Brands | The PhD Ads</title>
    <link rel="icon" href="img/favicon.png">
    <!-- Bootstrap CSS -->
    <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -25,889 +25,39 @@
    <link rel="stylesheet" href="css/slick.css">
    <!-- style CSS -->
    <link rel="stylesheet" href="css/style.css">
+   <!-- Custom Blog CSS -->
+   <link rel="stylesheet" href="css/blog-custom.css">
    <!-- Google Fonts -->
-   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Work+Sans:wght@300;400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
-
-    <style>
-      :root {
-         --flame: #ff4800;
-         --flame-dark: #cc3900;
-         --charcoal: #1a1a1a;
-         --ash: #666666;
-         --smoke: #f5f5f5;
-      }
-
-      /* Blog Main Title */
-      .blog-main-title {
-         font-family: 'Playfair Display', serif;
-         font-size: 44px;
-         font-weight: 700;
-         color: var(--charcoal);
-         line-height: 1.3;
-         margin: 30px 0;
-         border-left: 6px solid var(--flame);
-         padding-left: 30px;
-      }
-
-      /* Meta Info */
-      .blog-info-link {
-         list-style: none;
-         padding: 0;
-         display: flex;
-         gap: 30px;
-         flex-wrap: wrap;
-      }
-
-      .blog-info-link li {
-         font-size: 14px;
-         color: var(--ash);
-      }
-
-      .blog-info-link li a {
-         color: var(--ash);
-         text-decoration: none;
-         transition: color 0.3s ease;
-      }
-
-      .blog-info-link li a:hover {
-         color: var(--flame);
-      }
-
-      .blog-info-link li i {
-         color: var(--flame);
-         margin-right: 8px;
-      }
-
-      /* Introduction Box */
-      .intro-box {
-         background: linear-gradient(135deg, var(--flame) 0%, var(--flame-dark) 100%);
-         color: #ffffff;
-         padding: 50px;
-         border-radius: 0;
-         margin: 40px 0;
-         position: relative;
-         overflow: hidden;
-      }
-
-      .intro-box::before {
-         content: '"';
-         position: absolute;
-         top: -20px;
-         left: 30px;
-         font-family: 'Playfair Display', serif;
-         font-size: 200px;
-         color: rgba(255, 255, 255, 0.1);
-         font-weight: 700;
-      }
-
-      .intro-box p {
-         position: relative;
-         z-index: 2;
-         font-size: 20px;
-         line-height: 1.8;
-         margin-bottom: 20px;
-         font-weight: 300;
-      }
-
-      .intro-box p:last-child {
-         margin-bottom: 0;
-      }
-
-      /* Content Paragraphs */
-      .blog_details p {
-         font-size: 17px;
-         color: var(--ash);
-         line-height: 1.9;
-         margin-bottom: 24px;
-         font-weight: 300;
-      }
-
-      /* Section Titles */
-      .video-section-title {
-         font-family: 'Bebas Neue', sans-serif;
-         font-size: 42px;
-         letter-spacing: 2px;
-         color: var(--charcoal);
-         margin: 60px 0 30px;
-         text-transform: uppercase;
-         position: relative;
-         padding-bottom: 15px;
-      }
-
-      .video-section-title::after {
-         content: '';
-         position: absolute;
-         bottom: 0;
-         left: 0;
-         width: 100px;
-         height: 4px;
-         background: var(--flame);
-      }
-
-      .video-subsection-title {
-         font-family: 'Playfair Display', serif;
-         font-size: 28px;
-         font-weight: 600;
-         color: var(--charcoal);
-         margin: 40px 0 20px;
-      }
-
-      /* Stats Grid */
-      .video-stats-grid {
-         display: grid;
-         grid-template-columns: repeat(4, 1fr);
-         gap: 20px;
-         margin: 40px 0;
-      }
-
-      .video-stat-card {
-         background: var(--smoke);
-         padding: 30px 20px;
-         text-align: center;
-         border-bottom: 4px solid var(--flame);
-         transition: all 0.3s ease;
-      }
-
-      .video-stat-card:hover {
-         transform: translateY(-5px);
-         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-      }
-
-      .video-stat-card .stat-number {
-         font-family: 'Bebas Neue', sans-serif;
-         font-size: 56px;
-         color: var(--flame);
-         line-height: 1;
-         margin-bottom: 10px;
-      }
-
-      .video-stat-card .stat-label {
-         font-size: 14px;
-         color: var(--ash);
-         font-weight: 500;
-         text-transform: uppercase;
-         letter-spacing: 1px;
-      }
-
-      /* Video Types Cards */
-      .video-types-section {
-         background: var(--charcoal);
-         color: #ffffff;
-         padding: 60px;
-         margin: 50px 0;
-      }
-
-      .video-types-grid {
-         display: grid;
-         grid-template-columns: repeat(3, 1fr);
-         gap: 30px;
-         margin-top: 40px;
-      }
-
-      .video-type-box {
-         background: rgba(255, 255, 255, 0.05);
-         padding: 40px 30px;
-         border: 2px solid rgba(255, 72, 0, 0.3);
-         transition: all 0.3s ease;
-      }
-
-      .video-type-box:hover {
-         border-color: var(--flame);
-         background: rgba(255, 72, 0, 0.1);
-      }
-
-      .video-type-box .type-icon {
-         font-size: 48px;
-         color: var(--flame);
-         margin-bottom: 20px;
-      }
-
-      .video-type-box h4 {
-         font-family: 'Playfair Display', serif;
-         font-size: 22px;
-         font-weight: 600;
-         margin-bottom: 15px;
-      }
-
-      .video-type-box p {
-         font-size: 15px;
-         color: rgba(255, 255, 255, 0.8);
-         font-weight: 300;
-         line-height: 1.7;
-      }
-
-      /* Process Timeline */
-      .video-process-timeline {
-         position: relative;
-         padding: 40px 0;
-         margin: 50px 0;
-      }
-
-      .timeline-item {
-         display: flex;
-         gap: 30px;
-         margin-bottom: 40px;
-         position: relative;
-      }
-
-      .timeline-number {
-         flex-shrink: 0;
-         width: 80px;
-         height: 80px;
-         background: var(--flame);
-         color: #ffffff;
-         border-radius: 50%;
-         display: flex;
-         align-items: center;
-         justify-content: center;
-         font-family: 'Bebas Neue', sans-serif;
-         font-size: 32px;
-      }
-
-      .timeline-content {
-         flex: 1;
-         padding-top: 10px;
-      }
-
-      .timeline-content h4 {
-         font-size: 22px;
-         font-weight: 600;
-         color: var(--charcoal);
-         margin-bottom: 10px;
-      }
-
-      .timeline-content p {
-         font-size: 16px;
-         color: var(--ash);
-         margin: 0;
-      }
-
-      /* Benefits Grid */
-      .benefits-grid {
-         display: grid;
-         grid-template-columns: repeat(2, 1fr);
-         gap: 30px;
-         margin: 40px 0;
-      }
-
-      .benefit-card {
-         background: #ffffff;
-         padding: 35px;
-         border: 1px solid #e0e0e0;
-         border-top: 4px solid var(--flame);
-         transition: all 0.3s ease;
-      }
-
-      .benefit-card:hover {
-         transform: translateY(-5px);
-         box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
-      }
-
-      .benefit-card .benefit-icon {
-         font-size: 42px;
-         color: var(--flame);
-         margin-bottom: 20px;
-      }
-
-      .benefit-card h4 {
-         font-size: 20px;
-         font-weight: 600;
-         color: var(--charcoal);
-         margin-bottom: 12px;
-      }
-
-      .benefit-card p {
-         font-size: 15px;
-         color: var(--ash);
-         margin: 0;
-         line-height: 1.7;
-      }
-
-      /* Platform Focus Box */
-      .platform-focus-box {
-         background: var(--smoke);
-         padding: 50px;
-         margin: 50px 0;
-      }
-
-      .platform-focus-box h4 {
-         font-family: 'Bebas Neue', sans-serif;
-         font-size: 32px;
-         letter-spacing: 2px;
-         color: var(--charcoal);
-         margin-bottom: 30px;
-      }
-
-      .platforms-row {
-         display: flex;
-         gap: 15px;
-         flex-wrap: wrap;
-      }
-
-      .platform-pill {
-         background: #ffffff;
-         padding: 12px 24px;
-         border-left: 3px solid var(--flame);
-         font-size: 15px;
-         font-weight: 500;
-         color: var(--charcoal);
-      }
-
-      /* Industry Specific Section */
-      .industry-video-grid {
-         display: grid;
-         grid-template-columns: repeat(3, 1fr);
-         gap: 25px;
-         margin: 40px 0;
-      }
-
-      .industry-video-item {
-         background: #ffffff;
-         padding: 30px;
-         text-align: center;
-         border: 2px solid #e0e0e0;
-         transition: all 0.3s ease;
-      }
-
-      .industry-video-item:hover {
-         border-color: var(--flame);
-      }
-
-      .industry-video-item .industry-icon {
-         font-size: 52px;
-         color: var(--flame);
-         margin-bottom: 20px;
-      }
-
-      .industry-video-item h5 {
-         font-size: 18px;
-         font-weight: 600;
-         color: var(--charcoal);
-         margin-bottom: 12px;
-      }
-
-      .industry-video-item p {
-         font-size: 14px;
-         color: var(--ash);
-         margin: 0;
-      }
-
-      /* Key Points List */
-      .key-points-list {
-         background: var(--smoke);
-         padding: 40px 50px;
-         margin: 40px 0;
-      }
-
-      .key-points-list ul {
-         list-style: none;
-         padding: 0;
-         margin: 0;
-      }
-
-      .key-points-list li {
-         font-size: 17px;
-         color: var(--charcoal);
-         padding: 15px 0;
-         padding-left: 40px;
-         position: relative;
-         border-bottom: 1px solid #e0e0e0;
-      }
-
-      .key-points-list li:last-child {
-         border-bottom: none;
-      }
-
-      .key-points-list li::before {
-         content: '▸';
-         position: absolute;
-         left: 0;
-         color: var(--flame);
-         font-size: 24px;
-         font-weight: bold;
-      }
-
-      /* Video Equipment Box */
-      .equipment-box {
-         background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
-         color: #ffffff;
-         padding: 50px;
-         margin: 50px 0;
-      }
-
-      .equipment-box h4 {
-         font-family: 'Bebas Neue', sans-serif;
-         font-size: 36px;
-         letter-spacing: 2px;
-         color: var(--flame);
-         margin-bottom: 30px;
-      }
-
-      .equipment-grid {
-         display: grid;
-         grid-template-columns: repeat(3, 1fr);
-         gap: 30px;
-         margin-top: 30px;
-      }
-
-      .equipment-item {
-         padding: 25px;
-         background: rgba(255, 255, 255, 0.05);
-      }
-
-      .equipment-item h5 {
-         font-size: 18px;
-         font-weight: 600;
-         margin-bottom: 15px;
-         color: #ffffff;
-      }
-
-      .equipment-item ul {
-         list-style: none;
-         padding: 0;
-         margin: 0;
-      }
-
-      .equipment-item li {
-         font-size: 14px;
-         color: rgba(255, 255, 255, 0.7);
-         padding: 8px 0;
-         padding-left: 20px;
-         position: relative;
-      }
-
-      .equipment-item li::before {
-         content: '•';
-         position: absolute;
-         left: 0;
-         color: var(--flame);
-         font-size: 20px;
-      }
-
-      /* CTA Section */
-      .video-cta-section {
-         background: var(--flame);
-         color: #ffffff;
-         padding: 60px;
-         text-align: center;
-         margin: 60px 0;
-      }
-
-      .video-cta-section h3 {
-         font-family: 'Playfair Display', serif;
-         font-size: 38px;
-         font-weight: 700;
-         margin-bottom: 20px;
-      }
-
-      .video-cta-section p {
-         font-size: 18px;
-         margin-bottom: 30px;
-         color: rgba(255, 255, 255, 0.95);
-      }
-
-      .video-cta-button {
-         display: inline-block;
-         background: #ffffff;
-         color: var(--flame);
-         padding: 16px 45px;
-         font-size: 16px;
-         font-weight: 600;
-         text-transform: uppercase;
-         letter-spacing: 1.5px;
-         text-decoration: none;
-         transition: all 0.3s ease;
-      }
-
-      .video-cta-button:hover {
-         background: var(--charcoal);
-         color: #ffffff;
-         transform: translateY(-3px);
-      }
-
-      /* Sidebar */
-      .blog_right_sidebar .widget_title {
-         font-family: 'Bebas Neue', sans-serif;
-         font-size: 24px;
-         letter-spacing: 2px;
-         color: var(--charcoal);
-         margin-bottom: 25px;
-         text-transform: uppercase;
-         border-bottom: 3px solid var(--flame);
-         padding-bottom: 10px;
-      }
-
-      .single_sidebar_widget {
-         margin-bottom: 50px;
-      }
-
-      .popular_post_widget .media {
-         border-bottom: 1px solid #e0e0e0;
-         padding-bottom: 20px;
-         margin-bottom: 20px;
-      }
-
-      .popular_post_widget .media:last-child {
-         border-bottom: none;
-         margin-bottom: 0;
-      }
-
-      .popular_post_widget img {
-         width: 80px;
-         height: 80px;
-         object-fit: cover;
-         margin-right: 20px;
-      }
-
-      .popular_post_widget h3 {
-         font-size: 16px;
-         font-weight: 600;
-         color: var(--charcoal);
-         margin-bottom: 8px;
-         line-height: 1.4;
-         transition: color 0.3s ease;
-      }
-
-      .popular_post_widget a:hover h3 {
-         color: var(--flame);
-      }
-
-      .popular_post_widget p {
-         font-size: 13px;
-         color: var(--ash);
-         margin: 0;
-      }
-
-      .tag_cloud_widget .list {
-         list-style: none;
-         padding: 0;
-         display: flex;
-         flex-wrap: wrap;
-         gap: 10px;
-      }
-
-      .tag_cloud_widget .list li a {
-         display: block;
-         padding: 8px 18px;
-         background: var(--smoke);
-         color: var(--charcoal);
-         font-size: 13px;
-         font-weight: 500;
-         text-decoration: none;
-         transition: all 0.3s ease;
-      }
-
-      .tag_cloud_widget .list li a:hover {
-         background: var(--flame);
-         color: #ffffff;
-      }
-
-      /* Responsive */
-      @media (max-width: 992px) {
-         .video-stats-grid,
-         .video-types-grid,
-         .equipment-grid,
-         .industry-video-grid {
-            grid-template-columns: repeat(2, 1fr);
-         }
-      }
-
-      @media (max-width: 768px) {
-         .blog-main-title {
-            font-size: 32px;
-            padding-left: 20px;
-         }
-
-         .video-section-title {
-            font-size: 32px;
-         }
-
-         .intro-box {
-            padding: 30px;
-         }
-
-         .video-stats-grid,
-         .video-types-grid,
-         .equipment-grid,
-         .industry-video-grid,
-         .benefits-grid {
-            grid-template-columns: 1fr;
-         }
-
-         .platforms-row {
-            flex-direction: column;
-         }
-
-         .platform-pill {
-            text-align: center;
-         }
-      }
-
-      /* ===============================
-   HTML ↔ CSS CLASS ALIGNMENT FIX
-   =============================== */
-
-/* INTRO */
-.blog-intro {
-  background: linear-gradient(135deg, var(--flame), var(--flame-dark));
-  color: #fff;
-  padding: 50px;
-  margin: 40px 0;
-  position: relative;
-}
-.blog-intro p {
-  font-size: 20px;
-  line-height: 1.8;
-  font-weight: 300;
-}
-
-/* HIGHLIGHT BOX */
-.blog-highlight-box {
-  background: var(--smoke);
-  border-left: 6px solid var(--flame);
-  padding: 35px;
-  margin: 40px 0;
-  position: relative;
-}
-.blog-highlight-box p {
-  font-size: 18px;
-  color: var(--charcoal);
-}
-.blog-highlight-box .highlight-icon {
-  font-size: 40px;
-  color: var(--flame);
-  margin-bottom: 15px;
-}
-
-/* SECTION TITLES */
-.section-title {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 42px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin: 60px 0 30px;
-  position: relative;
-}
-.section-title::after {
-  content: '';
-  width: 100px;
-  height: 4px;
-  background: var(--flame);
-  display: block;
-  margin-top: 10px;
-}
-
-.subsection-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 28px;
-  font-weight: 600;
-  margin: 40px 0 20px;
-}
-
-/* LISTS */
-.blog-list,
-.blog-list-questions {
-  list-style: none;
-  padding: 0;
-}
-.blog-list li,
-.blog-list-questions li {
-  padding-left: 30px;
-  margin-bottom: 12px;
-  position: relative;
-  font-size: 17px;
-}
-.blog-list li i,
-.blog-list-questions li i {
-  position: absolute;
-  left: 0;
-  color: var(--flame);
-}
-
-/* FEATURE CARDS */
-.feature-card {
-  background: var(--smoke);
-  padding: 30px;
-  margin-bottom: 30px;
-  border-bottom: 4px solid var(--flame);
-  text-align: center;
-}
-.feature-icon {
-  font-size: 36px;
-  color: var(--flame);
-  margin-bottom: 15px;
-}
-
-/* WORKFLOW */
-.workflow-step {
-  display: flex;
-  gap: 20px;
-  margin-bottom: 25px;
-}
-.step-number {
-  width: 50px;
-  height: 50px;
-  background: var(--flame);
-  color: #fff;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Bebas Neue', sans-serif;
-}
-.step-content h5 {
-  font-weight: 600;
-}
-
-/* PLATFORM BADGES */
-.platforms-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-.platform-badge {
-  background: #fff;
-  border-left: 3px solid var(--flame);
-  padding: 10px 18px;
-  font-size: 14px;
-}
-
-/* VIDEO STATS */
-.stat-card {
-  background: var(--smoke);
-  padding: 25px;
-  text-align: center;
-  border-bottom: 4px solid var(--flame);
-}
-.stat-card i {
-  font-size: 32px;
-  color: var(--flame);
-  margin-bottom: 10px;
-}
-
-/* VIDEO TYPES */
-.video-types-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-}
-.video-type-item {
-  background: rgba(255,72,0,0.05);
-  padding: 25px;
-  text-align: center;
-  border: 2px solid rgba(255,72,0,0.2);
-}
-.video-type-item i {
-  font-size: 32px;
-  color: var(--flame);
-  margin-bottom: 10px;
-}
-
-/* INDUSTRIES */
-.industries-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 25px;
-}
-.industry-card {
-  background: #fff;
-  padding: 30px;
-  border: 2px solid #e0e0e0;
-  text-align: center;
-}
-.industry-icon {
-  font-size: 40px;
-  color: var(--flame);
-  margin-bottom: 15px;
-}
-
-/* WHY CHOOSE */
-.why-choose-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-}
-.why-choose-item {
-  background: var(--smoke);
-  padding: 25px;
-  text-align: center;
-}
-.why-choose-item i {
-  font-size: 30px;
-  color: var(--flame);
-  margin-bottom: 10px;
-}
-
-/* CTA */
-.cta-box {
-  background: var(--flame);
-  color: #fff;
-  padding: 60px;
-  text-align: center;
-}
-.cta-button {
-  display: inline-block;
-  background: #fff;
-  color: var(--flame);
-  padding: 16px 40px;
-  font-weight: 600;
-  text-decoration: none;
-}
-.cta-button:hover {
-  background: var(--charcoal);
-  color: #fff;
-}
-
-   </style>
+   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!--::header part start::-->
-    <div id="header"></div>
-    <!-- Header part end-->
+   <!--::header part start::-->
+   <div id="header"></div>
+   <!-- Header part end-->
 
-    <!-- breadcrumb start-->
-    <section class="breadcrumb" style="position:relative; overflow:hidden;">
-        <img 
-            src="img\hero4.jpg" 
-            alt="Blog Banner"
-            style="
-                width:100%;
-                height:280px;
-                object-fit:cover;
-                position:absolute;
-                top:0;
-                left:0;
-                z-index:-1;
-            "
-        />
-
+   <!-- breadcrumb start-->
+    <section class="breadcrumb breadcrumb_bg">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="breadcrumb_iner text-center">
                         <div class="breadcrumb_iner_item">
-                            <h2 style="color:#fff;">
-                                Blog
-                            </h2>
+                            <h2>Blog</h2>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- breadcrumb end-->
+    <!-- breadcrumb start-->
 
-
-
-
-    <!--================Blog Area =================-->
-    <section class="blog_area section_padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mb-5 mb-lg-0">
-                    <div class="blog_left_sidebar">
-                         <div class="single-post">
+   <!--================Blog Area =================-->
+   <section class="blog_area single-post-area section_padding">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-8 posts-list">
+               <div class="single-post">
                   <!-- Featured Image -->
                   <div class="feature-img">
                      <img class="img-fluid" src="img/blog/single_blog_1.png" alt="">
@@ -1309,88 +459,95 @@
 
                   </div>
                </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="blog_right_sidebar">
-                        <aside class="single_sidebar_widget popular_post_widget">
-                            <h3 class="widget_title">Recent Post</h3>
-                            <div class="media post_item">
-                                <img src="img/post/post_1.png" alt="post">
-                                <div class="media-body">
-                                    <a href="blog1.html">
-                                        <h3>Professional Photography & Videography for Brands: A Complete Business & Marketing Guide</h3>
-                                        <p>Feb 2026</p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="media post_item">
-                                <img src="img/post/post_2.png" alt="post">
-                                <div class="media-body">
-                                    <a href="blog2.html">
-                                        <h3>Product Photography for E-commerce: A Complete Guide to Conversions, Trust, and Business Growth</h3>
-                                        <p>Feb 2026</p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="media post_item">
-                                <img src="img/post/post_3.png" alt="post">
-                                <div class="media-body">
-                                    <a href="blog3.html">
-                                        <h3>Professional Videography for Brands: How Video Content Builds Trust, Engagement, and Market Authority</h3>
-                                        <p>Feb 2026</p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="media post_item">
-                                <img src="img/post/post_4.png" alt="post">
-                                <div class="media-body">
-                                    <a href="blog4.html">
-                                        <h3>Digital Advertising Creatives: How Professional Photography & Videography Improve ROI and Reduce Ad Costs</h3>
-                                        <p>Feb 2026</p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="media post_item">
-                                <img src="img/post/post_5.png" alt="post">
-                                <div class="media-body">
-                                    <a href="blog5.html">
-                                        <h3>Social Media Content Creation Strategy: Building Brand Consistency and Long-Term Digital Growth</h3>
-                                        <p>Feb 2026</p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="media post_item">
-                                <img src="img/post/post_6.png" alt="post">
-                                <div class="media-body">
-                                    <a href="blog6.html">
-                                        <h3>Local E-commerce Product Photography in Tamil Nadu: How Professional Product Shoots Help Online Brands Grow Faster</h3>
-                                        <p>Feb 2026</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </aside>
-                    </div>
-                </div>
             </div>
-        </div>
-    </section>
-    <!--================Blog Area =================-->
 
-    <!--::footer_part start::-->
-    <div id="footer"></div>
-    <!--::footer_part end::-->
+            <!-- Sidebar -->
+            <div class="col-lg-4">
+               <div class="blog_right_sidebar">
+                  <!-- Recent Posts -->
+                  <aside class="single_sidebar_widget popular_post_widget">
+                     <h3 class="widget_title">Recent Posts</h3>
+                     <div class="media post_item">
+                        <img src="img/post/post_1.png" alt="post">
+                        <div class="media-body">
+                           <a href="#">
+                              <h3>Complete Guide to Product Photography</h3>
+                           </a>
+                           <p>January 28, 2026</p>
+                        </div>
+                     </div>
+                     <div class="media post_item">
+                        <img src="img/post/post_2.png" alt="post">
+                        <div class="media-body">
+                           <a href="#">
+                              <h3>Video Marketing Strategies for 2026</h3>
+                           </a>
+                           <p>January 15, 2026</p>
+                        </div>
+                     </div>
+                     <div class="media post_item">
+                        <img src="img/post/post_3.png" alt="post">
+                        <div class="media-body">
+                           <a href="#">
+                              <h3>Building Brand Identity Through Visuals</h3>
+                           </a>
+                           <p>January 5, 2026</p>
+                        </div>
+                     </div>
+                     <div class="media post_item">
+                        <img src="img/post/post_4.png" alt="post">
+                        <div class="media-body">
+                           <a href="#">
+                              <h3>Social Media Content Best Practices</h3>
+                           </a>
+                           <p>December 20, 2025</p>
+                        </div>
+                     </div>
+                  </aside>
 
-    <!-- jquery plugins here-->
+                  <!-- Tag Cloud -->
+                  <aside class="single_sidebar_widget tag_cloud_widget">
+                     <h4 class="widget_title">Tag Clouds</h4>
+                     <ul class="list">
+                        <li><a href="#">Photography</a></li>
+                        <li><a href="#">Videography</a></li>
+                        <li><a href="#">E-commerce</a></li>
+                        <li><a href="#">Branding</a></li>
+                        <li><a href="#">Marketing</a></li>
+                        <li><a href="#">Product Photo</a></li>
+                        <li><a href="#">Digital Ads</a></li>
+                        <li><a href="#">Social Media</a></li>
+                     </ul>
+                  </aside>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!--================Blog Area end =================-->
+
+   <!--::footer_part start::-->
+   <div id="footer"></div>
+   <!--::footer_part end::-->
+
+   <!-- jquery plugins here-->
    <script src="js/jquery-1.12.1.min.js"></script>
+   <!-- popper js -->
    <script src="js/popper.min.js"></script>
+   <!-- bootstrap js -->
    <script src="js/bootstrap.min.js"></script>
+   <!-- easing js -->
    <script src="js/jquery.magnific-popup.js"></script>
+   <!-- swiper js -->
    <script src="js/swiper.min.js"></script>
+   <!-- swiper js -->
    <script src="js/jquery.filterizr.min.js"></script>
+   <!-- particles js -->
    <script src="js/owl.carousel.min.js"></script>
    <script src="js/jquery.nice-select.min.js"></script>
+   <!-- slick js -->
    <script src="js/slick.min.js"></script>
+   <script src="js/swiper.min.js"></script>
    <script src="js/jquery.counterup.min.js"></script>
    <script src="js/waypoints.min.js"></script>
    <script src="js/contact.js"></script>
@@ -1398,6 +555,7 @@
    <script src="js/jquery.form.js"></script>
    <script src="js/jquery.validate.min.js"></script>
    <script src="js/mail-script.js"></script>
+   <!-- custom js -->
    <script src="js/custom.js"></script>
 </body>
 

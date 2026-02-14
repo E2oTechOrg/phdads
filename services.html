@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="zxx">
+<html lang="en">
 
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>shotgear</title>
+    <title>Our Services - The PhD Ads</title>
     <link rel="icon" href="img/favicon.png">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -25,6 +25,207 @@
     <link rel="stylesheet" href="css/slick.css">
     <!-- style CSS -->
     <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        :root {
+            --theme-color: #ff4800;
+            --theme-dark: #e64000;
+            --text-dark: #2c3e50;
+            --text-light: #6c757d;
+            --bg-light: #f8f9fa;
+        }
+
+        /* Service Category Sections */
+        .service-category {
+            padding: 80px 0;
+        }
+
+        .service-category:nth-child(even) {
+            background-color: var(--bg-light);
+        }
+
+        .category-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .category-header h2 {
+            font-size: 42px;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 15px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .category-header h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--theme-color);
+            border-radius: 2px;
+        }
+
+        .category-header p {
+            font-size: 18px;
+            color: var(--text-light);
+            margin-top: 25px;
+        }
+
+        /* Service Cards */
+        .service-card {
+            background: #fff;
+            border-radius: 15px;
+            padding: 35px 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+            transition: all 0.4s ease;
+            height: 100%;
+            border: 2px solid transparent;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(255,72,0,0.15);
+            border-color: var(--theme-color);
+        }
+
+        .service-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover .service-image {
+            transform: scale(1.05);
+        }
+
+        .service-card h4 {
+            font-size: 22px;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 15px;
+            text-transform: capitalize;
+        }
+
+        .service-card p {
+            color: var(--text-light);
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .service-features {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        .service-features li {
+            padding: 8px 0;
+            color: var(--text-light);
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .service-features li:before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--theme-color);
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .service-tag {
+            display: inline-block;
+            background: rgba(255,72,0,0.1);
+            color: var(--theme-color);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            margin: 5px 5px 5px 0;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--theme-color), var(--theme-dark));
+            padding: 60px 0;
+            text-align: center;
+            color: #fff;
+        }
+
+        .cta-section h3 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .cta-section p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+
+        .cta-buttons a {
+            display: inline-block;
+            padding: 15px 40px;
+            margin: 10px;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn-white {
+            background: #fff;
+            color: var(--theme-color);
+        }
+
+        .btn-white:hover {
+            background: #f8f9fa;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: #fff;
+            border: 2px solid #fff;
+        }
+
+        .btn-outline:hover {
+            background: #fff;
+            color: var(--theme-color);
+            transform: translateY(-3px);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .category-header h2 {
+                font-size: 32px;
+            }
+            
+            .service-card {
+                padding: 25px 20px;
+            }
+            
+            .service-image {
+                height: 180px;
+            }
+            
+            .cta-section h3 {
+                font-size: 24px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -33,29 +234,14 @@
     <!-- Header part end-->
 
     <!-- breadcrumb start-->
-    <section class="breadcrumb" style="position:relative; overflow:hidden;">
-        <img 
-            src="img\hero4.jpg" 
-            alt="Services Banner"
-            style="
-                width:100%;
-                height:280px;
-                object-fit:cover;
-                position:absolute;
-                top:0;
-                left:0;
-                z-index:-1;
-            "
-        />
-
+    <section class="breadcrumb breadcrumb_bg">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="breadcrumb_iner text-center">
                         <div class="breadcrumb_iner_item">
-                            <h2 style="color:#fff;">
-                                Services
-                            </h2>
+                            <h2>Our <span>Services</span></h2>
+                            <p style="color: #fff; margin-top: 15px; font-size: 18px;">Where Creativity Meets Camera</p>
                         </div>
                     </div>
                 </div>
@@ -64,126 +250,414 @@
     </section>
     <!-- breadcrumb end-->
 
-    <!--::our_service part start::-->
-    <section class="our_service padding_top">
+    <!-- Professional Photography Services -->
+    <section class="service-category">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="section_tittle">
-                        <p>our service</p>
-                        <h2>what we offer</h2>
-                    </div>
-                </div>
+            <div class="category-header">
+                <h2>Professional Photography Services</h2>
+                <p>High-quality visual content for brands, businesses, and personal milestones</p>
             </div>
-            <div class="row align-items-center">
+            <div class="row">
                 <div class="col-lg-4 col-md-6">
-                    <div class="single_offer_text text-center wedding">
-                        <span class="flaticon-love-and-romance"></span>
-                        <h4>wedding photography</h4>
-                        <p>World the end of summer the sweltering heat makes human
-                            sweat in the night and man plants and trees wilt even</p>
-                        <a href="#" class="btn_1">read more</a>
-                    </div>
-                    <div class="single_offer_img d-none d-md-block">
-                        <img src="img/single_offer_img_2.png" alt="">
+                    <div class="service-card">
+                        <img src="img\gallery\product.jpg" alt="Product Photography" class="service-image">
+                        <h4>Product Photography</h4>
+                        <p>Create high-quality product images that enhance brand value and improve customer trust.</p>
+                        <ul class="service-features">
+                            <li>Controlled studio lighting</li>
+                            <li>Macro and detail shots</li>
+                            <li>Clean backgrounds</li>
+                            <li>Platform-ready outputs</li>
+                        </ul>
+                        <div>
+                            <span class="service-tag">E-commerce</span>
+                            <span class="service-tag">Catalogs</span>
+                            <span class="service-tag">Social Media</span>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-8 col-md-6">
-                    <div class="single_offer_img d-none d-md-block">
-                        <img src="img/single_offer_img_1.png" alt="">
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <img src="img\gallery\commercial.jpg" alt="Brand Photography" class="service-image">
+                        <h4>Brand & Commercial Photography</h4>
+                        <p>Brand-focused photography that communicates identity, credibility, and professionalism.</p>
+                        <ul class="service-features">
+                            <li>Brand discovery & planning</li>
+                            <li>Consistent style</li>
+                            <li>Corporate shoots</li>
+                            <li>Visual storytelling</li>
+                        </ul>
+                        <div>
+                            <span class="service-tag">Brand Campaigns</span>
+                            <span class="service-tag">Corporate</span>
+                        </div>
                     </div>
-                    <div class="single_offer_text text-center nature">
-                        <span class="flaticon-leaf"></span>
-                        <h4>Nature photography</h4>
-                        <p>that the monsoon clouds are soon coming, there is a
-                            strange silence in the ears, the sky gets darker and
-                            darker, the flash of lightning illuminates the dark
-                            skies all time needs band the sound of thunder fills the heart with fear.</p>
-                        <a href="#" class="btn_1">read more</a>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <img src="img\gallery\potrait.jpg" alt="Portrait Photography" class="service-image">
+                        <h4>Portrait & Headshots</h4>
+                        <p>Professional portraits that capture personality, confidence, and expression.</p>
+                        <ul class="service-features">
+                            <li>Individual portraits</li>
+                            <li>Corporate headshots</li>
+                            <li>LinkedIn photos</li>
+                            <li>Creative portraits</li>
+                        </ul>
+                        <div>
+                            <span class="service-tag">Personal Branding</span>
+                            <span class="service-tag">Corporate</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <img src="img\gallery\real-estate.jpg" alt="Real Estate Photography" class="service-image">
+                        <h4>Real Estate Photography</h4>
+                        <p>Professional visuals that help properties stand out in a competitive market.</p>
+                        <ul class="service-features">
+                            <li>Wide-angle shots</li>
+                            <li>Interior & exterior</li>
+                            <li>Property showcasing</li>
+                            <li>HDR photography</li>
+                        </ul>
+                        <div>
+                            <span class="service-tag">Builders</span>
+                            <span class="service-tag">Listings</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <img src="img/gallery/food.jpg" alt="Food Photography" class="service-image">
+                        <h4>Food Photography</h4>
+                        <p>Styled food photography that highlights freshness, texture, and presentation.</p>
+                        <ul class="service-features">
+                            <li>Professional styling</li>
+                            <li>Menu photography</li>
+                            <li>Restaurant shoots</li>
+                            <li>Social media content</li>
+                        </ul>
+                        <div>
+                            <span class="service-tag">Restaurants</span>
+                            <span class="service-tag">Cafes</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <img src="img/gallery/fashion.jpg" alt="Fashion Photography" class="service-image">
+                        <h4>Fashion Portfolio Shoots</h4>
+                        <p>Professional portfolios for models, influencers, and fashion professionals.</p>
+                        <ul class="service-features">
+                            <li>Studio & outdoor sessions</li>
+                            <li>Multiple outfits & looks</li>
+                            <li>Creative lighting</li>
+                            <li>Professional retouching</li>
+                        </ul>
+                        <div>
+                            <span class="service-tag">Models</span>
+                            <span class="service-tag">Fashion</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!--::our_service part end::-->
 
-    <!--::pricing part start::-->
-    <section class="pricing_part section_padding">
+    <!-- Professional Videography Services -->
+    <section class="service-category">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="section_tittle">
-                        <p>Price table</p>
-                        <h2>pricing plan</h2>
-                    </div>
-                </div>
+            <div class="category-header">
+                <h2>Professional Videography Services</h2>
+                <p>Engaging video content designed for digital platforms and brand growth</p>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-4 col-sm-6">
-                    <div class="single_pricing_part">
-                        <div class="pricing_tittle">
-                            <img src="img/icon/feature_icon_1.svg" alt="">
-                            <p>Standard</p>
-                        </div>
-                        <div class="pricing_content">
-                            <h3>$50.00 <span>/ mo</span></h3>
-                            <ul>
-                                <li>2GB Bandwidth</li>
-                                <li>Two Account</li>
-                                <li>15GB Storage</li>
-                                <li>Sale After Service</li>
-                                <li>3 Host Domain</li>
-                                <li>24/7 Support</li>
-                            </ul>
-                            <a href="#" class="btn_2">book Now</a>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <img src="img/services/product-video.jpg" alt="Product Video" class="service-image">
+                        <h4>Product & Promotional Videos</h4>
+                        <p>Engaging videos designed for digital consumption and product showcases.</p>
+                        <ul class="service-features">
+                            <li>High-resolution capture</li>
+                            <li>Stabilized movement</li>
+                            <li>Professional lighting</li>
+                            <li>Brand-aligned editing</li>
+                        </ul>
+                        <div>
+                            <span class="service-tag">Product Launch</span>
+                            <span class="service-tag">Demos</span>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="single_pricing_part">
-                        <div class="pricing_tittle">
-                            <img src="img/icon/feature_icon_2.svg" alt="">
-                            <p>Standard</p>
-                        </div>
-                        <div class="pricing_content">
-                            <h3>$50.00 <span>/ mo</span></h3>
-                            <ul>
-                                <li>2GB Bandwidth</li>
-                                <li>Two Account</li>
-                                <li>15GB Storage</li>
-                                <li>Sale After Service</li>
-                                <li>3 Host Domain</li>
-                                <li>24/7 Support</li>
-                            </ul>
-                            <a href="#" class="btn_2">book Now</a>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <img src="img/services/social-media-video.jpg" alt="Social Media Video" class="service-image">
+                        <h4>Social Media Videos</h4>
+                        <p>Short-form video content optimized for modern platforms and engagement.</p>
+                        <ul class="service-features">
+                            <li>Instagram Reels</li>
+                            <li>YouTube Shorts</li>
+                            <li>Facebook videos</li>
+                            <li>Brand stories</li>
+                        </ul>
+                        <div>
+                            <span class="service-tag">Reels</span>
+                            <span class="service-tag">Shorts</span>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="single_pricing_part">
-                        <div class="pricing_tittle">
-                            <img src="img/icon/feature_icon_3.svg" alt="">
-                            <p>Standard</p>
-                        </div>
-                        <div class="pricing_content">
-                            <h3>$50.00 <span>/ mo</span></h3>
-                            <ul>
-                                <li>2GB Bandwidth</li>
-                                <li>Two Account</li>
-                                <li>15GB Storage</li>
-                                <li>Sale After Service</li>
-                                <li>3 Host Domain</li>
-                                <li>24/7 Support</li>
-                            </ul>
-                            <a href="#" class="btn_2">book Now</a>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <img src="img/services/drone-video.jpg" alt="Drone Videography" class="service-image">
+                        <h4>Drone Videography</h4>
+                        <p>Aerial visuals that add cinematic depth and visual impact to your content.</p>
+                        <ul class="service-features">
+                            <li>Aerial perspectives</li>
+                            <li>Event coverage</li>
+                            <li>Real estate projects</li>
+                            <li>Cinematic shots</li>
+                        </ul>
+                        <div>
+                            <span class="service-tag">Aerial</span>
+                            <span class="service-tag">Events</span>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
-    <!--::pricing part end::-->
+
+    <!-- Wedding Services -->
+    <section class="service-category">
+        <div class="container">
+            <div class="category-header">
+                <h2>Wedding Photography & Videography</h2>
+                <p>Capturing your special moments with authenticity and artistry</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <img src="img/services/wedding-photography.jpg" alt="Wedding Photography" class="service-image">
+                        <h4>Wedding Photography</h4>
+                        <p>Comprehensive wedding coverage from ceremony to reception.</p>
+                        <ul class="service-features">
+                            <li>Candid photography</li>
+                            <li>Traditional shots</li>
+                            <li>Detail photography</li>
+                            <li>Guest coverage</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <img src="img/services/wedding-video.jpg" alt="Wedding Videography" class="service-image">
+                        <h4>Cinematic Wedding Films</h4>
+                        <p>Cinematic storytelling that captures the emotion and beauty of your day.</p>
+                        <ul class="service-features">
+                            <li>Cinematic editing</li>
+                            <li>Same-day highlights</li>
+                            <li>Full event coverage</li>
+                            <li>Audio recording</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <img src="img/services/pre-wedding.jpg" alt="Pre-Wedding Photography" class="service-image">
+                        <h4>Pre-Wedding & Engagement</h4>
+                        <p>Creative pre-wedding shoots and engagement photography.</p>
+                        <ul class="service-features">
+                            <li>Location scouting</li>
+                            <li>Creative concepts</li>
+                            <li>Multiple locations</li>
+                            <li>Outfit changes</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Baby & Family Services -->
+    <section class="service-category">
+        <div class="container">
+            <div class="category-header">
+                <h2>Baby, Kids & Family Photography</h2>
+                <p>Precious moments captured with care and creativity</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <img src="img/services/newborn-photography.jpg" alt="Newborn Photography" class="service-image">
+                        <h4>Newborn & Baby Photography</h4>
+                        <p>Gentle and safe photography for your precious newborn and baby milestones.</p>
+                        <ul class="service-features">
+                            <li>Newborn sessions</li>
+                            <li>Milestone shoots</li>
+                            <li>First birthday</li>
+                            <li>Studio & home options</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <img src="img/services/maternity-photography.jpg" alt="Maternity Photography" class="service-image">
+                        <h4>Maternity Photography</h4>
+                        <p>Beautiful maternity photography celebrating the journey to motherhood.</p>
+                        <ul class="service-features">
+                            <li>Studio sessions</li>
+                            <li>Outdoor shoots</li>
+                            <li>Couple & solo shots</li>
+                            <li>Creative styling</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <img src="img/services/family-photography.jpg" alt="Family Photography" class="service-image">
+                        <h4>Family Photography</h4>
+                        <p>Warm family portraits that capture connection and love.</p>
+                        <ul class="service-features">
+                            <li>Family portraits</li>
+                            <li>Extended family</li>
+                            <li>Generational photos</li>
+                            <li>Natural interactions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event & Cultural Services -->
+    <section class="service-category">
+        <div class="container">
+            <div class="category-header">
+                <h2>Event & Cultural Photography</h2>
+                <p>Professional documentation of celebrations, traditions, and milestones</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <img src="img/services/traditional-events.jpg" alt="Traditional Events" class="service-image">
+                        <h4>Traditional Events</h4>
+                        <p>Respectful documentation of cultural and traditional ceremonies.</p>
+                        <ul class="service-features">
+                            <li>Housewarming</li>
+                            <li>Naming ceremonies</li>
+                            <li>Religious functions</li>
+                            <li>Community events</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <img src="img/services/birthday-photography.jpg" alt="Birthday Photography" class="service-image">
+                        <h4>Birthday & Celebrations</h4>
+                        <p>Joyful coverage of birthdays and milestone celebrations.</p>
+                        <ul class="service-features">
+                            <li>Birthday parties</li>
+                            <li>Anniversary events</li>
+                            <li>Candid moments</li>
+                            <li>Group photographs</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <img src="img/services/school-events.jpg" alt="School Events" class="service-image">
+                        <h4>School & College Events</h4>
+                        <p>Professional coverage of academic milestones and events.</p>
+                        <ul class="service-features">
+                            <li>Student portraits</li>
+                            <li>Class photographs</li>
+                            <li>Annual day coverage</li>
+                            <li>Graduation events</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Services -->
+    <section class="service-category">
+        <div class="container">
+            <div class="category-header">
+                <h2>Additional Services</h2>
+                <p>Specialized solutions for creative and restoration needs</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <img src="img/services/ad-creative.jpg" alt="Digital Ad Creative" class="service-image">
+                        <h4>Digital Ad Creative</h4>
+                        <p>Photography and video creatives for paid advertising campaigns.</p>
+                        <ul class="service-features">
+                            <li>Platform-specific formats</li>
+                            <li>High-contrast visuals</li>
+                            <li>Mobile optimization</li>
+                            <li>Performance-focused</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <img src="img/services/photo-restoration.jpg" alt="Photo Restoration" class="service-image">
+                        <h4>Photo Restoration</h4>
+                        <p>Digital restoration of old, damaged, or faded photographs.</p>
+                        <ul class="service-features">
+                            <li>Scratch repair</li>
+                            <li>Color correction</li>
+                            <li>Resolution enhancement</li>
+                            <li>Digital preservation</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <img src="img/services/editing-post-production.jpg" alt="Editing Services" class="service-image">
+                        <h4>Editing & Post-Production</h4>
+                        <p>Professional editing services for photos and videos.</p>
+                        <ul class="service-features">
+                            <li>Color correction</li>
+                            <li>Retouching</li>
+                            <li>Video editing</li>
+                            <li>Cinematic grading</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h3>Ready to Create Something Amazing?</h3>
+            <p>Let's bring your vision to life with professional photography and videography</p>
+            <div class="cta-buttons">
+                <a href="tel:9344723010" class="btn-white"> Call: 9344723010</a>
+                <a href="mailto:team@e2o.in" class="btn-outline">Email Us</a>
+            </div>
+        </div>
+    </section>
 
     <!--::footer_part start::-->
     <div id="footer"></div>
